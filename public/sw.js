@@ -1,4 +1,4 @@
-const cacheName = "v1";
+const cacheName = "v2";
 async function impl(e) {
     let cache = await caches.open(cacheName); // Cache megnyitása, async
     let cacheResponse = await cache.match(e.request); // Lookup
