@@ -6,7 +6,7 @@ const ShoppingList = ({ list, onDelete, onClick, onEdit }) => {
    * Ha a store értéke nem definiált, alapértelmezett képet használ.
    */
   const getStoreIcon = (store) => {
-    return `./Images/${store?.toLowerCase() || 'store'}.png`; 
+    return `/Images/${store?.toLowerCase() || 'store'}.png`; 
   };
 
   /*
