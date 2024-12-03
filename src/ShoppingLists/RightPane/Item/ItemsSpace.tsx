@@ -141,7 +141,7 @@ const ItemsSpace = ({ selectedList, isDarkMode }) => {
             />
           ))
         ) : (
-          <p>No items in the list.</p>  
+          <p>Nincsenek elemek a listában.</p>  
         )}
       </div>
       <PriceCounter items={items} />
