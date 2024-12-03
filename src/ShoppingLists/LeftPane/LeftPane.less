@@ -1,0 +1,57 @@
+.search-input {
+  padding: 10px; /* Belső margó az input mező tartalma és szélei között. */
+  border: 1px solid #ccc; /* Világosszürke keret az input mező körül. */
+  border-radius: 4px; /* Lekerekített sarkok az input mezőn. */
+  margin-bottom: 20px; /* Távolság az input mező alatt lévő elemtől. */
+  width: 95%; /* Az input mező szélessége a szülő elem szélességének 95%-a. */
+}
+
+.lists-container {
+  flex-grow: 1; /* A konténer kitölti a rendelkezésre álló helyet a flexbox szülőjében. */
+  display: flex; /* Flexbox elrendezés a listákhoz. */
+  flex-direction: column; /* A listák függőlegesen helyezkednek el. */
+  gap: 10px; /* Távolság az egyes listaelemek között. */
+  overflow-y: auto; /* Függőleges görgetési lehetőség, ha a tartalom túllépi a konténer magasságát. */
+  margin-bottom: 80px; /* Alsó margó az alsó gomb számára. */
+}
+
+.shopping-list-item {
+  padding: 10px; /* Belső margó az elem tartalma és szélei között. */
+  border: 1px solid #ccc; /* Világosszürke keret az elem körül. */
+  border-radius: 8px; /* Lekerekített sarkok a listaelemen. */
+  cursor: pointer; /* Mutatóváltás kézre, jelezve, hogy kattintható. */
+  transition: background-color 0.2s; /* Sima háttérszín-váltás 0,2 másodperc alatt, például hover esetén. */
+  width: 95%; /* A listaelem szélessége a szülő elem szélességének 95%-a. */
+}
+
+.add-button-container {
+  position: absolute; /* Az elem a szülőhöz képest pozicionált. */
+  bottom: 20px; /* Az elem 20px-re helyezkedik el a szülő alsó szélétől. */
+  left: 50%; /* Az elem középen helyezkedik el vízszintesen a szülőhöz képest. */
+  transform: translateX(-50%); /* A vízszintes középre igazítás finomítása, a bal széléhez igazítva. */
+}
+
+.add-button {
+  width: 60px; /* A gomb szélessége. */
+  height: 60px; /* A gomb magassága, megegyezik a szélességgel, hogy kört képezzen. */
+  border-radius: 50%; /* Teljesen lekerekített sarkok, kör alakúvá téve a gombot. */
+  background-color: #580f0f; /* Sötétbordó háttérszín a gombhoz. */
+  color: white; /* Fehér szöveg a gombon. */
+  font-size: 30px; /* A gomb szövegének mérete. */
+  border: none; /* Nincs gombkeret. */
+  cursor: pointer; /* Mutatóváltás kézre, jelezve, hogy kattintható. */
+  display: flex; /* Flexbox elrendezés a gomb belső tartalmához. */
+  align-items: center; /* A tartalom függőleges középre igazítása. */
+  justify-content: center; /* A tartalom vízszintes középre igazítása. */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Árnyék a gomb alatt, amely finom lebegési hatást ad. */
+
+  &:hover { /* Hover (egér feletti) állapot stílusa. */
+    background-color: #3b0c0c; /* Sötétebb bordó háttérszín a hover állapothoz. */
+  }
+}
+
+
+
+
+
+

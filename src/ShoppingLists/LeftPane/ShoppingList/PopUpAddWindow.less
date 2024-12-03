@@ -1,0 +1,52 @@
+.popup {
+  position: fixed; /* A popup fix pozícióban jelenik meg az ablakhoz képest. */
+  top: 0; /* A popup a böngészőablak tetejéhez igazodik. */
+  left: 0; /* A popup a böngészőablak bal széléhez igazodik. */
+  right: 0; /* A popup a böngészőablak jobb széléhez igazodik. */
+  bottom: 0; /* A popup a böngészőablak aljához igazodik. */
+  background: rgba(0, 0, 0, 0.8); /* Átlátszó fekete háttér, amely kiemeli a popupot. */
+  display: flex; /* Flexbox elrendezés a tartalom középre helyezéséhez. */
+  align-items: center; /* A popup tartalma függőlegesen középre igazítva. */
+  justify-content: center; /* A popup tartalma vízszintesen középre igazítva. */
+  z-index: 1000; /* Magasabb rétegre helyezi a popupot, hogy a többi tartalom fölött legyen. */
+}
+
+.popup-textarea {
+  width: 90%; /* A textarea szélessége az elérhető hely 90%-a. */
+  margin: 5px auto; /* Automatikus vízszintes középre igazítás, 5px felső és alsó margóval. */
+  padding: 8px; /* 8px belső tér a szöveg és a textarea szélei között. */
+  font-size: 16px; /* A szöveg mérete 16px. */
+  border: 1px solid #ccc; /* Világos szürke, 1px vastag szegély a textarea körül. */
+  border-radius: 5px; /* A sarkok 5px sugarúak, lekerekítettek. */
+  display: block; /* Blokk szintű elemként viselkedik, új sort kezd. */
+  resize: none; /* A textarea nem átméretezhető. */
+}
+
+.popup-button {
+  font-weight: bold; /* A gomb szövege vastag betűtípussal jelenik meg. */
+  padding: 10px 20px; /* 10px felső és alsó, 20px oldalsó belső tér a gombon belül. */
+  border: none; /* Nincs szegély a gomb körül. */
+  border-radius: 5px; /* A gomb sarkai 5px sugarúak, lekerekítettek. */
+  cursor: pointer; /* Az egérmutató kéz alakúra változik a gomb fölött. */
+}
+
+.popup label {
+  display: block;
+  margin-top: 10px;
+  color: inherit;      
+}
+
+  
+.left-pane.dark .popup-input,
+.left-pane.dark .popup-textarea {
+  background: #444; /* Sötétszürke háttérszín sötét módhoz. */
+  color: white; /* Fehér szöveg sötét módhoz. */
+}
+
+.left-pane.light .popup-input,
+.left-pane.light .popup-textarea {
+  background: #f9f9f9; /* Világos háttérszín világos módhoz. */
+  color: black; /* Fekete szöveg világos módhoz. */
+}
+  
+  

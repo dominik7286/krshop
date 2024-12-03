@@ -1,0 +1,49 @@
+.app {
+  display: flex; /* A konténer elemeket rugalmasan rendezi. */
+  flex-direction: column; /* Az elemeket függőlegesen (oszlopban) helyezzi el. */
+  align-items: center; /* A gyermekelemeket vízszintesen középre igazítja. */
+  justify-content: center; /* A gyermekelemeket függőlegesen középre igazítja. */
+  height: 800px; /* A konténer magassága a teljes viewport magasságát kitölti. */
+}
+
+.logo {
+  width: 250px; /* A kép szélessége 250 pixel. */
+  height: 250px; /* A logó magassága 250 pixel. */
+  margin-bottom: 20px; /* A logó alatti térköz 20 pixel. */
+}
+
+form {
+  display: flex; /* Az űrlapot flexbox-ként jeleníti meg. */
+  flex-direction: column; /* Az űrlap mezőit függőlegesen (oszlopban) helyezi el. */
+  width: 300px; /* A Form szélessége 300 pixel. */
+}
+
+input {
+  margin-bottom: 10px; /* Az input mezők alatti távolság 10 pixel. */
+  padding: 10px; /* Az input mezők belső térköze 10 pixel. */
+}
+
+button {
+  margin-top: 10px; /* A gomb tetejének 10 pixel távolságot ad. */
+  padding: 10px; /* A gomb belső térköze 10 pixel. */
+}
+
+.dark-mode {
+  background-color: #333; /* Sötét téma esetén a háttér sötétszürke (#333) lesz. */
+  color: white; /* Sötét téma esetén a szöveg fehér lesz. */
+}
+
+.light-mode {
+  background-color: white; /* Világos téma esetén a háttér fehér lesz. */
+  color: black; /* Világos téma esetén a szöveg fekete lesz. */
+}
+
+.error {
+  color: red; /* A hibaüzenet színe piros lesz. */
+  margin-top: 10px; /* A hibaüzenet fölötti távolság 10 pixel. */
+}
+
+.theme-toggle {
+  left: 20px;
+  bottom: 20px;
+}

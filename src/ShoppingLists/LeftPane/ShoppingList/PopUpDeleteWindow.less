@@ -1,0 +1,73 @@
+.popup-overlay {
+  position: fixed; /* A popup fix pozícióban jelenik meg az ablakhoz képest. */
+  top: 0; /* A popup a böngészőablak tetejéhez igazodik. */
+  left: 0; /* A popup a böngészőablak bal széléhez igazodik. */
+  right: 0; /* A popup a böngészőablak jobb széléhez igazodik. */
+  bottom: 0; /* A popup a böngészőablak aljához igazodik. */
+  background: rgba(0, 0, 0, 0.8); /* Átlátszó fekete háttér, amely kiemeli a popupot. */
+  display: flex; /* Flexbox elrendezés a tartalom középre helyezéséhez. */
+  align-items: center; /* A popup tartalma függőlegesen középre igazítva. */
+  justify-content: center; /* A popup tartalma vízszintesen középre igazítva. */
+  z-index: 1000; /* Magasabb rétegre helyezi a popupot, hogy a többi tartalom fölött legyen. */
+ 
+}
+
+.popup-content {
+  text-align: center; /* A tartalmat középre igazítja. */
+}
+
+.left-pane.dark .cancel-button {
+  background-color: darkred; /* Sötétpiros háttérszín sötét módban. */
+}
+
+.left-pane.dark .confirm-button {
+  background-color: darkgreen; /* Sötétzöld háttérszín sötét módban. */
+}
+
+.left-pane.light .cancel-button {
+  background-color: red; /* Piros háttérszín világos módban. */
+}
+
+.left-pane.light .confirm-button {
+  background-color: green; /* Zöld háttérszín világos módban. */
+}
+
+.left-pane.dark .popup-content {
+  background: #444; /* Sötétszürke háttérszín sötét módhoz. */
+  color: white; /* Fehér szöveg sötét módhoz. */
+}
+
+.left-pane.light .popup-content {
+  background: #f9f9f9; /* Világos háttérszín világos módhoz. */
+  color: black; /* Fekete szöveg világos módhoz. */
+}
+
+.right-pane.dark .cancel-button {
+  background-color: darkred; /* Sötétpiros háttérszín sötét módban. */
+}
+
+.right-pane.dark .confirm-button {
+  background-color: darkgreen; /* Sötétzöld háttérszín sötét módban. */
+}
+
+/* Világos módban a jobb panel gombjai */
+.right-pane.light .cancel-button {
+  background-color: red; /* Piros háttérszín világos módban. */
+}
+
+.right-pane.light .confirm-button {
+  background-color: green; /* Zöld háttérszín világos módban. */
+}
+
+/* Sötét mód háttér és szöveg színei a pop-up ablakhoz a jobb panelen */
+.right-pane.dark .popup-content {
+  background: #444; /* Sötétszürke háttérszín sötét módhoz. */
+  color: white; /* Fehér szöveg sötét módhoz. */
+}
+
+/* Világos mód háttér és szöveg színei a pop-up ablakhoz a jobb panelen */
+.right-pane.light .popup-content {
+  background: #f9f9f9; /* Világos háttérszín világos módhoz. */
+  color: black; /* Fekete szöveg világos módhoz. */
+}
+

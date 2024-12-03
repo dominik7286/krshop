@@ -1,0 +1,58 @@
+.shopping-lists-layout {
+  display: flex; /* A layout flexbox-alapú elrendezést használ. */
+  height: 100vh; /* A teljes ablak magasságát lefedi. */
+  width: 100vw; /* A teljes ablak szélességét lefedi. */
+  overflow: hidden; /* Letiltja a görgetősáv megjelensét. */
+
+  &.dark {
+    color: white; /* Fehér szövegszín a sötét témához. */
+
+    .right-pane {
+      background-color: #333; /* Sötétszürke háttér a jobb oldali panelhez sötét módban. */
+    }
+
+    .left-pane {
+      background-color: #333; /* Sötétszürke háttér a bal oldali panelhez sötét módban. */
+    }
+  }
+
+  &.light {
+    color: black; /* Fekete szövegszín a sötét témához. */
+
+    .right-pane {
+      background-color: #f0f0f0; /* Fehér háttér a jobb oldali panelhez sötét módban. */
+    }
+
+    .left-pane {
+      background-color: #f0f0f0; /* Fehér háttér a jobb oldali panelhez sötét módban. */
+    }
+  }
+}
+
+.left-pane {
+  width: 33%; /* A bal panel szélessége az elérhető hely egyharmada. */
+  height: 100%; /* A bal panel a teljes rendelkezésre álló magasságot lefedi. */
+  display: flex; /* A panel flex alapú elrendezést használ.*/
+  flex-direction: column; /* A gyermekelemek függőlegesen helyezkednek el. */
+  justify-content: flex-start; /* A tartalom a panel tetején kezdődik. */
+  padding: 20px 10px; /* Padding: 20px a tetején és alján, 10px a bal és jobb oldalon. */
+  box-sizing: border-box; /* A padding beleszámít a szélességbe és magasságba. */
+  border-right: 1px solid gray;
+  position: relative; /* Fix elem pozícionálásához */
+@media (max-width: 768px) {
+    width: 100%; /* Mobilnézetben a bal panel teljes szélességet elfoglalja. */
+  }
+}
+
+.right-pane {
+  width: 67%; /* A jobb panel szélessége az elérhető hely kétharmada. */
+  height: 100%; /* A jobb panel a teljes rendelkezésre álló magasságot lefedi. */
+  padding: 20px; /* Padding: 20px minden oldalon. */
+  box-sizing: border-box; /* A padding beleszámít a szélességbe és magasságba. */
+  overflow: hidden; /* A jobb panel tartalmának túllógása nem látható. */
+  position: relative; /* Relatív pozíciót használjon a jobb oldali panelhez. */
+  @media (max-width: 768px) {
+    width: 100%; /* Mobilnézetben a jobb panel teljes szélességet elfoglalja. */
+  }
+}
+

@@ -1,0 +1,52 @@
+.item {
+  display: flex; /* Flex elrendezés az elemek között. */
+  align-items: center; /* Az elemek függőleges középre igazítása. */
+  padding: 10px; /* Belülről távolság az elemek és a doboz széle között. */
+  margin: 5px 0; /* Függőleges távolság az elemek között. */
+  background-color: #fff; /* Fehér háttérszín, még sötét módban is. */
+  border: 1px solid #ddd; /* Halvány szegély az elemek körül. */
+  border-radius: 8px; /* Lekerekített sarkok. */
+  justify-content: space-between; /* Az elemek távolságának kiegyenlítése. */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Enyhe árnyék az elemek alatt. */
+}
+
+.item-details {
+  display: flex; /* Az elemek egymás mellé helyezése. */
+  align-items: center; /* Az elemek függőleges középre igazítása. */
+  flex-grow: 1; /* A részletek szakasz kitöltse a rendelkezésre álló helyet. */
+}
+
+.item-name {
+  font-weight: bold; /* Félkövér szöveg a név kiemeléséhez. */
+  font-size: 1.1em; /* Kissé nagyobb betűméret. */
+}
+
+.item-info {
+  font-size: 0.9em; /* Kisebb betűméret az információs szöveghez. */
+  margin-left: 10px; /* Távolság a névtől. */
+}
+
+.purchase-checkbox {
+  margin-left: auto; /* Az ellenőrző doboz jobbra igazítása. */
+  margin-right: 10px; /* Távolság az ellenőrző doboz és a szomszédos elem között. */
+  margin-top: 10px; /* Távolság az ellenőrző doboz felső széle és a szülőelem között. */
+  transform: scale(1.8); /* Az ellenőrző doboz méretének növelése. */
+  padding: 5px; /* További hely az ellenőrző doboz körül. */
+}
+
+.edit-icon {
+  margin-left: 1.5px; /* Enyhe távolság a szomszédos elemektől. */
+}
+
+.trash-icon {
+  width: 30px; /* Az ikon szélessége. */
+  height: 30px; /* Az ikon magassága. */
+  margin-bottom: 5px; /* Távolság az ikon alja és a szomszédos elemek között. */
+  cursor: pointer; /* Mutatókéz megjelenítése az egérmutató felette. */
+  margin-left: 1.5px; /* Enyhe távolság a szomszédos elemektől. */
+}
+
+.right-pane.dark .item-name,
+.right-pane.dark .item-info {
+  color: #000; /* Fekete szöveg a sötét módban. */
+}

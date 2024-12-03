@@ -1,0 +1,35 @@
+.items-space-container {
+  position: relative; /* A konténer relatív pozícióba helyezése, hogy belső elemek, például sticky vagy abszolút pozícionált elemek ehhez igazodjanak. */
+  background-color: #fefbe9; /* A konténer alapszíne, amely egy világos papírszerű árnyalat. */
+  border: 1px solid #ccc; /* Szürke színű szegély a konténer körül. */
+  border-radius: 8px; /* A konténer sarkainak lekerekítése 8px-es sugárral. */
+  padding: 20px; /* A belső tartalom körüli tér növelése 20px-nyi távolsággal. */
+  margin-top: 30px; /* 30px-es távolság a konténer teteje és az előtte lévő tartalom között. */
+  max-height: 2000px; /* A konténer maximális magasságának 2000px-re korlátozása. */
+  margin-left: auto; /* Automatikus baloldali margó a vízszintes középre igazításhoz. */
+  margin-right: auto; /* Automatikus jobboldali margó a vízszintes középre igazításhoz. */
+  max-width: 700px; /* A konténer maximális szélességének 700px-re korlátozása. */
+  height: 450px; /* Fix magasság beállítása, hogy a tartalom ezen belül jelenjen meg. */
+  overflow-x: hidden; /* A vízszintes görgetés letiltása. */
+  overflow-y: inherit; /* A függőleges görgetés öröklése a szülőtől. */
+}
+
+.items {
+  display: flex; /* A belső elemek elrendezése flex konténerként. */
+  flex-direction: column; /* Az elemeket függőleges oszlopba helyezi. */
+}
+
+.item {
+  display: flex; /* Az egyes elemek tartalmának flex elrendezése legyen. */
+  align-items: center; /* A belső elemek (pl. kép, szöveg) középre igazítása függőlegesen. */
+  padding: 10px; /* Belső távolság növelése minden oldalról 10px-nyi értékkel. */
+  margin: 5px 0; /* Felső és alsó margó 5px-re állítása, bal és jobb oldalon nulla. */
+  background-color: #e9e9e9; /* Fehéres háttérszín az elemekhez. */
+  border-radius: 4px; /* Az elemek sarkainak lekerekítése 4px-es sugárral. */
+}
+
+.item-image {
+  width: 50px; /* A kép szélessége 50px. */
+  height: 50px; /* A kép magassága 50px. */
+  margin-right: 10px; /* 10px-es távolság a kép és a mellette lévő tartalom között. */
+}

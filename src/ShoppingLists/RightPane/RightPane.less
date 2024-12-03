@@ -1,0 +1,42 @@
+.logout-container {
+  position: absolute; /* Az elem pozicionálása abszolút módon a szülőhöz képest */
+  top: 20px; /* A szülő elem tetejétől 20px-re elhelyezve */
+  right: 20px; /* A szülő elem jobb szélétől 20px-re elhelyezve */
+  z-index: 10; /* Biztosítja, hogy a logout gomb mindig a legfelül legyen */
+}
+
+.logout-icon {
+  width: 40px; /* Az ikon szélessége 40px */
+  height: 40px; /* Az ikon magassága 40px */
+  cursor: pointer; /* Az egérmutató változása kattintási lehetőséget jelző kézre */
+}
+
+.right-pane .theme-toggle {
+  margin-top: 30px; /* A téma váltó gomb tetején 30px-es margó */
+}
+
+h2 {
+  display: flex; /* A cím flexbox alapú elrendezés használata */
+  justify-content: center; /* A cím középre igazítása vízszintesen */
+  margin-bottom: 10px; /* A cím alatti margó 10px */
+}
+
+.button-container {
+  display: flex; /* A gombok konténerét flexbox elrendezéssel jelenítjük meg */
+  justify-content: center; /* A gombok középre igazítása vízszintesen */
+  margin-bottom: 10px; /* A gombkonténer alatti margó 10px */
+}
+
+.add-item-button {
+  padding: 10px 18px; /* A gomb belső margója: 10px felül és alul, 18px balra és jobbra */
+  font-size: 14px; /* A gomb szövegének betűmérete 14px */
+  background-color: #580f0f; /* A gomb háttérszíne sötétpiros */
+  color: white; /* A gomb szövegének színe fehér */
+  border: none; /* A gomb körüli szegély eltüntetése */
+  border-radius: 10px; /* A gomb lekerekített sarkai: 10px */
+  cursor: pointer; /* Az egérmutató változása kattintási lehetőséget jelző kézre */
+
+  &:hover {
+    background-color: #3b0c0c; /* A gomb háttérszíne sötétebb pirosra változik, amikor az egér fölé viszik */
+  }
+}

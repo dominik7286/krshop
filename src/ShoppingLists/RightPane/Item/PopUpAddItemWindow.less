@@ -1,0 +1,53 @@
+.popup-content {
+  padding: 20px; /* A belső tér mérete, hogy a tartalom ne érjen közvetlenül a mező széléhez. */
+  width: 95%; /* A popup szélessége a szülő eleméhez képest. */
+  max-width: 500px; /* A popup maximális szélessége, hogy nagy kijelzőkön is korlátozott maradjon. */
+  border-radius: 10px; /* Lekerekített sarkok a popup számára. */
+  box-sizing: border-box; /* A szélesség és magasság tartalmazza a padding-et és border-t. */
+}
+
+.popup h3 {
+  text-align: center; /* A cím középre igazítása. */
+  margin-top: 0; /* Felső margó eltávolítása a címtől. */
+}
+
+.popup label {
+  display: block; /* A címke külön sorban jelenik meg. */
+  margin-top: 10px; /* Távolság a címke és az előtte lévő elem között. */
+  color: inherit; /* A címke színe öröklődik a szülő elemétől. */
+}
+
+.popup input {
+  width: 90%; /* Az input mező szélessége a szülő eleméhez képest. */
+  margin: 5px auto; /* A mező automatikus középre helyezése, és egyenletes margó. */
+  padding: 8px; /* Belső tér az input mező tartalmának. */
+  font-size: 16px; /* A szövegméret az input mezőben. */
+  border: 1px solid #ccc; /* Világos szürke szegély az input mezőn. */
+  border-radius: 5px; /* Lekerekített sarkok az input mezőn. */
+  display: block; /* Az input mező külön sorban jelenik meg. */
+}
+
+.popup-content.dark input {
+  background: #444; /* A sötét témában a mező háttérszíne sötétszürke. */
+  color: white; /* A sötét témában a szöveg színe fehér. */
+}
+
+.popup-content.light input {
+  background: white; /* A világos témában a mező háttérszíne fehér. */
+  color: black; /* A világos témában a szöveg színe fekete. */
+}
+
+.popup-buttons {
+  display: flex; /* A gombokat egy sorban jeleníti meg. */
+  justify-content: space-between; /* Egyenletes távolság a gombok között. */
+  margin-top: 20px; /* Távolság a gombok és az előző elem között. */
+}
+
+.popup-button {
+  color: white; /* A gomb szövegének színe fehér. */
+  font-weight: bold; /* A gomb szövege félkövér. */
+  padding: 10px 20px; /* A gomb mérete, belső tér a tartalom körül. */
+  border: none; /* A gombnak nincs szegélye. */
+  border-radius: 5px; /* A gomb sarkainak lekerekítése. */
+  cursor: pointer; /* Az egérmutató váltása kattinthatóvá teszi a gombot. */
+}

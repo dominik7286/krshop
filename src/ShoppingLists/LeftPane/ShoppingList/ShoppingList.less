@@ -1,0 +1,32 @@
+.shopping-list-item {
+  display: flex; /* Flex elrendezés, hogy az elemek egymás mellett jelenjenek meg. */
+  align-items: center; /* Az elemek függőlegesen középre igazítása. */
+  &:hover {
+    background-color: #eaeaea; /* A bevásárlólista színe ha a kurzor felette van. */
+  }
+}
+
+.store-icon {
+  width: 32px; /* Az ikon szélessége 32 pixel. */
+  height: 32px; /* Az ikon magassága 32 pixel. */
+  border-radius: 50%; /* A szélek lekerekítése, hogy kör alakú legyen. */
+  margin-right: 8px; /* Jobb oldalon 8 pixel távolság az ikontól a következő elemig. */
+}
+
+.list-name {
+  flex-grow: 1; /* A név elfoglalja a rendelkezésre álló helyet a flex tartályon belül. */
+  font-size: 16px; /* A szöveg betűmérete 16 pixel. */
+}
+
+.edit-icon {
+  width: 26px; /* Az ikon szélessége 26 pixel. */
+  height: 26px; /* Az ikon magassága 26 pixel. */
+  margin-right: 10px; /* Jobb oldalon 10 pixel távolság az ikontól a következő elemig. */
+  cursor: pointer; /* Az egérmutató ikon fölé vitelekor megjelenő ikon. */
+}
+
+.delete-icon {
+  width: 24px; /* Az ikon szélessége 24 pixel. */
+  height: 24px; /* Az ikon magassága 24 pixel. */
+  cursor: pointer; /* Az egérmutató ikon fölé vitelekor megjelenő ikon. */
+}
