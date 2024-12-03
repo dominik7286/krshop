@@ -14,7 +14,7 @@ interface ItemProps {
 }
 
 const Item = ({ id, name, price, category, quantity, unit, hasBought,onDelete, onEdit, onToggleBought}: ItemProps) => {
-  const categoryImage = `/Images/${category}.png`; /* A kategóriához tartozó kép elérési útja. */
+  const categoryImage = `./Images/${category}.png`; /* A kategóriához tartozó kép elérési útja. */
 
   /*
    * A komponens megjeleníti az elem adatait, mint például nevét, árát, mennyiségét, kategóriáját és állapotát. 
