@@ -38,13 +38,13 @@ const Item = ({ id, name, price, category, quantity, unit, hasBought,onDelete, o
         onChange={(e) => onToggleBought(id, (e.target as HTMLInputElement).checked)}
       />      
       <img 
-        src="/Images/editicon.png"
+        src="./Images/editicon.png"
         alt="Szerkesztés"
         className="edit-icon"
         onClick={() => onEdit(id)} 
       />
       <img
-        src="/Images/trashbin.png"
+        src="./Images/trashbin.png"
         alt="Törlés"
         className="trash-icon"
         onClick={() => onDelete(id)}
